@@ -447,6 +447,9 @@ img {
 .footer-content{
     margin-right: 120px
 }
+.social-list-dark{
+    gap: 16px;
+}
 
 .social-footer-tittle{
     font-weight: 500;
