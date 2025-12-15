@@ -41,6 +41,7 @@ img {
     display: block;
     height: auto;
     max-width: 100%;
+    object-fit: cover;
 }
 
 .container {
@@ -365,6 +366,7 @@ img {
     /*height: 1240px;*/
     padding: 120px 0;
 }
+
 .our-portfolio-list{
     display: flex;
     flex-wrap: wrap;
@@ -384,6 +386,34 @@ img {
     padding-inline: 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+}
+
+.portfolio-overlay{
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
+    color: #f4f4fd;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    transform: translatey(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-portfolio-item:hover .overlay-text{
+    transform: translateY(0);
+    cursor:pointer;
+}
+.our-portfolio-item:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 
