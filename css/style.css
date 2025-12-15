@@ -423,7 +423,21 @@ img {
     padding: 100px 0;
     background-color:  #2e2f42;
 }
+.footer .container {
+    display: flex;
+    gap: 120px;
+}
 
+.social-footer-tittle{
+    font-weight: 500;
+    font-size: 16px;
+
+    /* line-height: 24px; */
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom:  16px;
+}
 .logo-footer{
     display: inline-block;
     margin-bottom: 16px;
@@ -436,4 +450,9 @@ img {
 
 #footer .logo span{
     color: #f4f4fd;
+}
+
+.social-icon-link-dark:hover,
+.social-icon-link-dark:focus{
+    background-color: #31d0aa;
 }
